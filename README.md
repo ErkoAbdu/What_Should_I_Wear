@@ -15,3 +15,10 @@ Setup with this is simple, just make an account and get an api key
 
 ## OpenAI
 This one is a little bit more invovled. You will need to have an account then select the quickstart tutorial for Node.js and follow the instructions on how to get the api key for your respective operating system.
+
+## Images
+Home Page:
+![What Should I Wear Index Page](/imgs/main.png "What Should I Wear Index Page")
+
+Results Page:
+![What Should I Wear Results Page](/imgs/results.png "What Should I Wear Results Page")
