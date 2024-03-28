@@ -1,0 +1,9 @@
+extends layout 
+
+block main-content 
+  div.container.d-flex.justify-content-center.m-5
+    form(action="./city" method="GET" style="width: 500px")
+      .mb-3
+        label.form-label(for="city") Enter City Name:
+        input.form-control(type="text", id="city", name="city", aria-describedby="city")
+      button.btn.btn-secondary.align-items-center(type="submit") Submit

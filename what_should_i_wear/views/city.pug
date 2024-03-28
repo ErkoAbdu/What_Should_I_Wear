@@ -1,0 +1,52 @@
+extends layout 
+
+block main-content
+  .card.mb-3.d-flex
+    .row.g-0
+      .col-md-4.d-flex.align-items-center.justify-content-center
+        div.d-flex.flex-column.align-items-center
+          img.img-fluid.rounded-start(src=`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png` alt="icon displaying the current weather conditions")
+          script. 
+          -
+            let roundTemp = Math.round(weather.main.temp)
+            let roundFeelsLike = Math.round(weather.main.feels_like)
+          p.current-temp(style = "font-size: 35px") #{roundTemp}°C
+          p.current-conditions.border-bottom(style="font-size:20px") #{weather.weather[0].description}
+          p.city-name.d-flex.text-align-center(style="font-size: 30px") #{weather.name}, #{weather.sys.country}
+      .col-md-8
+        .card-body(style = "background-color: #efefef" )
+          .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+            p.card-title.mt-4.mx-4.mb-0.text-align-center(style = "font-size: 20px") What We Recommend:
+            p.card-text.m-4(style = "font-size: 18px") #{openAI}
+          .row.row-cols-1.row-cols-md-3.g-4
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Feels Like
+                  p.card-text(style = "font-size: 25px") #{roundFeelsLike}°C
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Humidity
+                  p.card-text(style = "font-size: 25px") #{weather.main.humidity}%
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Wind Speed
+                  p.card-title(style = "font-size: 25px") #{weather.wind.speed} km/h
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Visibility
+                  p.card-title(style = "font-size: 25px") #{weather.visibility} Meters
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Pressure
+                  p.card-title(style = "font-size: 25px") #{weather.main.pressure} hPa
+            .col
+              .card.m-4(style = "background-color: #748cf1; color: #fff; border-radius: 20px; border: none;")
+                .card-body
+                  p.card-title(style = "font-size: 20px") Clouds
+                  p.card-title(style = "font-size: 25px") #{weather.clouds.all}%
+          

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+#site-name {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+}
+.form-label {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+.btn.btn-secondary {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
+.current-temp {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
+.current-conditions {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+}
+.city-name {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+.card-title {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+.card-text {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
