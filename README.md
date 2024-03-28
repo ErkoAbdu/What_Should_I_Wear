@@ -8,7 +8,7 @@ This application combines the OpenWeatherMap API and the OpenAI API to allow use
 - Bootstrap
 
 ## Setup
-To set this application up first start off downloading the node_modules by entering <npm i> in your project terminal. Then get API keys from [OpenWeatherMap](https://openweathermap.org/current) and [OpenAI](https://openai.com/blog/openai-api) (This one is a paid key). Once you obtain the keys, fill them into the .env.example file in the repo and run the project!
+To set this application up first start off downloading the node_modules by entering (npm i) in your project terminal. Then get API keys from [OpenWeatherMap](https://openweathermap.org/current) and [OpenAI](https://openai.com/blog/openai-api) (This one is a paid key). Once you obtain the keys, fill them into the .env.example file in the repo and run the project!
 
 ## OpenWeatherMap
 Setup with this is simple, just make an account and get an api key
