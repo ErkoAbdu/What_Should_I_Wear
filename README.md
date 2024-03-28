@@ -13,5 +13,5 @@ To set this application up get API keys from [OpenWeatherMap](https://openweathe
 ## OpenWeatherMap
 Setup with this is simple, just make an account and get an api key
 
-##OpenAI
+## OpenAI
 This one is a little bit more invovled. You will need to have an account then select the quickstart tutorial for Node.js and follow the instructions on how to get the api key for your respective operating system.
