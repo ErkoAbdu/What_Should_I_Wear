@@ -1,4 +1,4 @@
-# what_should_i_wear
+# What Should I Wear
 This application combines the OpenWeatherMap API and the OpenAI API to allow users to get accurate weather data for the specified city and a recomendation on what kinds of clothes to wear depending on that information!
 
 ## Technologies Used
