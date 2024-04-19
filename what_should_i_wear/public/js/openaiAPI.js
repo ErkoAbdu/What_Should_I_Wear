@@ -1,8 +1,10 @@
 // import OpenAI from "openai";
 const OpenAI = require("openai");
+require('dotenv').config();
+
 
 async function askAI(cityName, currentWeather) {
-  const openai = new OpenAI(process.env.OPEN_AI_KEY);
+  const openai = new OpenAI({ apiKey: process.env.OPEN_AI_KEY });
 
   let rawDATA = JSON.stringify(currentWeather);
 
